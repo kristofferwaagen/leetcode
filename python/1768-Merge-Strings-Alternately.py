@@ -1,9 +1,10 @@
 class Solution:
-    def mergeAlternately(self, word1: str, word2: str) -> str:
+    def merge_alternately(self, word_1: str, word_2: str) -> str:
         merged = []
-        for i in range(max(len(word1), len(word2))):
-            if i < len(word1):
-                merged.append(word1[i])
-            if i < len(word2):
-                merged.append(word2[i])
+        for i in range(max(len(word_1), len(word_2))):
+            if i < len(word_1):
+                merged.append(word_1[i])
+            if i < len(word_2):
+                merged.append(word_2[i])
         return ''.join(merged)
+
